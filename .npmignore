@@ -1,0 +1,4 @@
+*.md
+src/
+node_modules/
+test/

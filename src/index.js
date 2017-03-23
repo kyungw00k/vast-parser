@@ -6,6 +6,4 @@ function parseFromXML (xml, option = {}) {
   return objectMapper(JXONTree.fromXML(xml, option)).to(VAST).shift()
 }
 
-export {
-  parseFromXML
-}
+export { parseFromXML }

@@ -8,7 +8,6 @@ import parseXML from './parse-xml'
 
 class JXONTree {
   constructor (oXMLParent) {
-
     // The document object is an especial object that it may miss some functions or attrs depending on the browser.
     // To prevent this problem with create the JXONTree using the root childNode which is a fully fleshed node on
     // all supported browsers.
@@ -23,8 +22,7 @@ class JXONTree {
         /* jshint bitwise: false */
         if ((oNode.nodeType - 1 | 1) === 3) {
           sCollectedTxt += oNode.nodeType === 3 ? oNode.nodeValue.trim() : oNode.nodeValue
-        }
-        else if (oNode.nodeType === 1 && !oNode.prefix) {
+        } else if (oNode.nodeType === 1 && !oNode.prefix) {
           sProp = decapitalize(oNode.nodeName)
           vContent = new JXONTree(oNode)
           if (this.hasOwnProperty(sProp)) {

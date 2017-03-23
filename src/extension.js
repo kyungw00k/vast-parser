@@ -8,8 +8,8 @@ class Extension {
     Object.keys(node).forEach((key) => {
       if (key.startsWith('@')) { // if key is attribute
         this[key.substring(1)] = node.attr(key.substring(1))
-        // } else if (isValueObject(node[key])) {
-        //   this[key] = node[key].keyValue
+      // } else if (isValueObject(node[key])) {
+      //   this[key] = node[key].keyValue
       } else {
         this[key] = node[key]
       }

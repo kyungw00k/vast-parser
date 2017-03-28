@@ -11,19 +11,20 @@ npm install @kyungw00k/VAST.js
 ## Usage
 
 ### Browser
-```js
-import VAST from 'vast.js'
-
-const xmlString = '<VAST version="4.0">...</VAST>'
-const vast = VAST.parseFromXML(xmlString)
+```html
+<script src="VAST.js"></script>
+<script>
+var xmlString = '<VAST version="4.0">...</VAST>'
+var vastObject = VAST.parseFromXML(xmlString)
 // ... Do your thing ...
+</script>
 ```
 
 ### Node
 
 ```js
 import XmlDom from 'xmldom'
-import VAST from 'vast.js'
+import VAST from 'VAST.js'
 
 
 const xmlString = '<VAST version="4.0">...</VAST>'
@@ -35,7 +36,7 @@ const vast = VAST.parseFromXML(xmlString, {DOMParser: XmlDom.DOMParser} )
 - [@MailOnline/videojs-vast-vpaid](https://github.com/MailOnline/videojs-vast-vpaid)
 
 ## TODO
-- [ ] Need more test cases
+- [ ] Need more VAST 4.0 test cases
 
 ## License
 MIT

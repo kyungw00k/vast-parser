@@ -1,18 +1,18 @@
-# VAST.js
+# vast-parser
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 
 Just another [IAB](https://www.iab.com/) [VAST 4.0](https://www.iab.com/guidelines/digital-video-ad-serving-template-vast-4-0/) format parser.
 
 ## Install
 ```
-npm install @kyungw00k/VAST.js
+npm install vast-parser
 ```
 
 ## Usage
 
 ### Browser
 ```html
-<script src="VAST.js"></script>
+<script src="vast-parser.js"></script>
 <script>
 var xmlString = '<VAST version="4.0">...</VAST>'
 var vastObject = VAST.parseFromXML(xmlString)
@@ -24,7 +24,7 @@ var vastObject = VAST.parseFromXML(xmlString)
 
 ```js
 import XmlDom from 'xmldom'
-import VAST from 'VAST.js'
+import VAST from 'vast-parser'
 
 
 const xmlString = '<VAST version="4.0">...</VAST>'

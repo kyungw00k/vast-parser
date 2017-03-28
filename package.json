@@ -1,7 +1,7 @@
 {
-  "name": "VAST.js",
+  "name": "vast-parser",
   "version": "1.0.0",
-  "main": "dist/VAST.js",
+  "main": "dist/main.js",
   "repository": "https://github.com/kyungw00k/VAST.js.git",
   "author": "Kyungwook Park <parksama@gmail.com>",
   "license": "MIT",

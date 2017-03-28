@@ -5,9 +5,7 @@ let dateFormat = require('dateformat')
 
 module.exports = {
   target: 'web',
-  entry: {
-    'VAST': path.resolve(__dirname, 'src/index.js')
-  },
+  entry: path.resolve(__dirname, 'src/index.js'),
   node: {
     console: false,
     global: false,

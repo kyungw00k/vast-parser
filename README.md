@@ -16,10 +16,10 @@ npm install vast-parser
 
 ### Browser
 ```html
-<script src="vast-parser.js"></script>
+<script src="/path/to/vast-parser.min.js"></script>
 <script>
 var xmlString = '<VAST version="4.0">...</VAST>'
-var vastObject = VAST.parseFromXML(xmlString)
+var vast = VASTParser.parseFromXML(xmlString)
 // ... Do your thing ...
 </script>
 ```
@@ -28,13 +28,16 @@ var vastObject = VAST.parseFromXML(xmlString)
 
 ```js
 import XmlDom from 'xmldom'
-import VAST from 'vast-parser'
+import VASTParser from 'vast-parser'
 
 
 const xmlString = '<VAST version="4.0">...</VAST>'
-const vast = VAST.parseFromXML(xmlString, {DOMParser: XmlDom.DOMParser} )
+const vast = VASTParser.parseFromXML(xmlString, {DOMParser: XmlDom.DOMParser} )
 // ... Do your thing ...
 ```
+
+## API
+
 
 ## Inspired By
 - [@MailOnline/videojs-vast-vpaid](https://github.com/MailOnline/videojs-vast-vpaid)
